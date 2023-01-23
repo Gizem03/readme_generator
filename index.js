@@ -23,6 +23,8 @@ function init() {
     .then((answers) => {
       // Use user feedback for... whatever!!
       console.log({ answers });
+      const markdown = generateMarkdown(answers);
+      fs.writeFileSync("README.md", markdown);
     })
     .catch((error) => {
       if (error.isTtyError) {
@@ -40,7 +42,7 @@ console.log("are we here?");
 // function call to initialize program
 init();
 
-// ask the title of the project using inquirer
-// save the title of the project
+// ask the title of the project using inquirer - done
+// save the title of the project - done
 // create a markdown with title
 // save markdown to readme.md
