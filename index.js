@@ -15,6 +15,17 @@ const questions = [
     name: "description",
     message: "Fill out Description",
   },
+  {
+    type: "list",
+    name: "license",
+    message: "Choose license",
+    choices: [
+      "GNU LGPLv3",
+      "Mozilla Public License 2.0",
+      "Apache License 2.0",
+      "MIT License",
+    ],
+  },
 ];
 
 // function to write README file
@@ -26,8 +37,8 @@ function writeToFile(fileName, data) {
 function init() {
   inquirer
     .prompt(questions)
-    .then((gizem) => {
-      const markdown = generateMarkdown(gizem);
+    .then((answers) => {
+      const markdown = generateMarkdown(answers);
       writeToFile("README.md", markdown);
     })
     .catch((error) => {
