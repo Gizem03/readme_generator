@@ -13,7 +13,9 @@ const questions = [
 ];
 
 // function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+  fs.writeFileSync(fileName, data);
+}
 
 // function to initialize program
 function init() {
@@ -21,23 +23,13 @@ function init() {
   inquirer
     .prompt(questions)
     .then((answers) => {
-      // Use user feedback for... whatever!!
-      console.log({ answers });
       const markdown = generateMarkdown(answers);
-      fs.writeFileSync("README.md", markdown);
+      writeToFile("README.md", markdown);
     })
     .catch((error) => {
-      if (error.isTtyError) {
-        // Prompt couldn't be rendered in the current environment
-        console.error(error);
-      } else {
-        // Something else went wrong
-        console.error(error);
-      }
+      console.error(error);
     });
 }
-
-console.log("are we here?");
 
 // function call to initialize program
 init();
