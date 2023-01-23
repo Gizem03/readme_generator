@@ -10,6 +10,11 @@ const questions = [
     name: "title",
     message: "Title of the project?",
   },
+  {
+    type: "editor",
+    name: "description",
+    message: "Fill out Description",
+  },
 ];
 
 // function to write README file
@@ -19,11 +24,10 @@ function writeToFile(fileName, data) {
 
 // function to initialize program
 function init() {
-  console.log("in init");
   inquirer
     .prompt(questions)
-    .then((answers) => {
-      const markdown = generateMarkdown(answers);
+    .then((gizem) => {
+      const markdown = generateMarkdown(gizem);
       writeToFile("README.md", markdown);
     })
     .catch((error) => {
