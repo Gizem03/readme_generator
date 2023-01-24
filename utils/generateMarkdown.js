@@ -1,19 +1,31 @@
-// function to generate markdown for README
 // TODO think about the license badge
 // TODO construct a table of contents
-// TODO finish remaining sections Installation, Usage, Contributing, and Tests
-// TODO questions with github username,
-// TODO email to questions section
+
 function generateMarkdown(answers) {
   return `# ${answers.title}
 ## Description
 ${answers.description}
 
+## Installation
+${answers.installation}
+
+## Usage
+${answers.usage}
+
+
 ## License
 Licensed under ${answers.license}
 
+## Contributing
+${answers.contributing}
+
+## Tests
+${answers.tests}
+
 ## Questions
-You can find me [here](https://github.com/${answers.github})`;
+You can find me [here](https://github.com/${answers.github})
+
+You can reach me at ${answers.email}`;
 }
 
 module.exports = generateMarkdown;

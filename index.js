@@ -16,6 +16,16 @@ const questions = [
     message: "Fill out Description",
   },
   {
+    type: "editor",
+    name: "installation",
+    message: "What are the steps required to install your project?",
+  },
+  {
+    type: "editor",
+    name: "usage",
+    message: "Provide instructions and examples for use.",
+  },
+  {
     type: "list",
     name: "license",
     message: "Choose license",
@@ -27,9 +37,25 @@ const questions = [
     ],
   },
   {
+    type: "editor",
+    name: "contributing",
+    message:
+      "If you would like other developers to contribute your project provide guidelines for how to do so.",
+  },
+  {
+    type: "editor",
+    name: "tests",
+    message: "Provide examples on how to run tests",
+  },
+  {
     type: "input",
     name: "github",
     message: "Your Github username",
+  },
+  {
+    type: "input",
+    name: "email",
+    message: "Your e-mail",
   },
 ];
 
