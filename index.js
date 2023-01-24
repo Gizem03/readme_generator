@@ -70,7 +70,7 @@ function init() {
     .prompt(questions)
     .then((answers) => {
       const markdown = generateMarkdown(answers);
-      writeToFile("README.md", markdown);
+      writeToFile("dummy_README.md", markdown);
     })
     .catch((error) => {
       console.error(error);
