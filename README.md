@@ -1,9 +1,10 @@
-# foobar
+# Readme Generator
+
 ## Description
-sdasdsad
 
+This is a Node.js application written to help with readme generation.
 
-[![License: LGPL v3](https://img.shields.io/badge/License-LGPL_v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)
+[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
 
 ## Table of Contents
 
@@ -14,28 +15,31 @@ sdasdsad
 - [Tests](#tests)
 - [Questions](#questions)
 
-
 ## Installation
-dasdasda
 
+npm install
 
 ## Usage
-sdasdasd
 
-
+Run `node index` and follow the instructions.
 
 ## License
-Licensed under GNU LGPLv3
+
+Licensed under Mozilla Public License 2.0
 
 ## Contributing
-sdasdasdasd
 
+Feel free to contribute!
 
 ## Tests
-sdasdasd
 
+No tests
 
 ## Questions
-You can find me [here](https://github.com/asdasd)
 
-You can reach me at asdasd
+You can find me [here](https://github.com/gizem03)
+
+You can reach me at gizem@gmail.com
+
+## Video link
+You can grab the video walkthrough of the application [here](https://drive.google.com/file/d/108Ol2-iikgH9GnOtHuNQEqfLNRUUq7m-/view)
